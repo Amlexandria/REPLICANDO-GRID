@@ -1,0 +1,25 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  /* max-width: 1200px; */
+  margin: 0px auto;
+}
+
+.row:before, .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class*="col-"]{
+  box-sizing: border-box;
+  float: left;
+  min-height: 7px;
+  /* gutters */
+  padding: 12px;
+}
